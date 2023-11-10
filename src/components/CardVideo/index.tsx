@@ -3,7 +3,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
-export default function Video() {
+export default function CardVideo() {
   return (
     <Card sx={{ maxWidth: 220, maxHeight: 200, overflow: 'hidden' }}>
       <CardMedia

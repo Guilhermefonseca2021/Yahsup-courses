@@ -18,9 +18,9 @@ export default function Header() {
         </form>
         <div>
           <ul>
-          <NavLink to="/">Class</NavLink>
-          <NavLink to="/">Hom</NavLink>
-          <NavLink to="/login">Login</NavLink>
+          <NavLink to="/" className='nav-item'>Class</NavLink>
+          <NavLink to="/" className='nav-item'>Hom</NavLink>
+          <NavLink to="/login" className='nav-item'>Login</NavLink>
           </ul>
         </div>
       </div>

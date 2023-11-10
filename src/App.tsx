@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import { Login } from './pages/UserLogin'
+import PlayerView from './pages/PlayerView'
 
 
 export default function App() {
@@ -9,8 +9,8 @@ export default function App() {
       <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          </Routes>
+          <Route path="/video" element={<PlayerView />} />
+        </Routes>
       </BrowserRouter>
     </>
   )

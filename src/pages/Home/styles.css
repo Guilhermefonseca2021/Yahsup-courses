@@ -18,6 +18,14 @@
     align-items: center;
 }
 
+.trending h2 {
+    color: #394867;
+    border-radius: 8px;
+    padding: .5rem;
+    margin: 0 2rem;
+    font-size: 2rem;
+}
+
 .container .content-box {
     margin-top: 2rem;
     display: flex;

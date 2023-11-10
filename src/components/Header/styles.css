@@ -1,26 +1,37 @@
 .header {
-    padding: .5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 
-    gap: .5rem;
+  gap: 0.5rem;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
 }
 
 .navbar form input {
-    padding: .2rem;
-    background: #f0f0f0;
-    border-radius: 8px;
-    outline: none;
-    border: none;
+  padding: 0.2rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+.nav-item {
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: blue;
 }

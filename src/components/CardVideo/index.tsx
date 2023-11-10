@@ -3,12 +3,22 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
-export default function CardVideo() {
+interface VideoProps {
+  id?: number,
+  url?: string
+}
+
+export default function CardVideo({id, url}: VideoProps) {
+  function handlePlayVideo() {
+    console.log(url)
+  }
+  
   return (
-    <Card sx={{ maxWidth: 220, maxHeight: 200, overflow: 'hidden' }}>
+    <Card sx={{ maxWidth: 220, maxHeight: 200, overflow: 'hidden' }} key={id}>
       <CardMedia
         component="img"
         alt="green iguana"
+        onClick={handlePlayVideo}
         height="145"
         image="https://images.unsplash.com/photo-1546795708-c962dc089798?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       />

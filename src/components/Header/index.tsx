@@ -1,9 +1,21 @@
 import {} from "react-router";
 import { NavLink } from "react-router-dom";
 import { FaBeer } from "react-icons/fa";
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import "./styles.css";
 
 export default function Header() {
+  const [search, setSearch] = useState<string>()
+  const history = useNavigate()
+
+  console.log(search)
+
+  function handleSearch(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    history(`/search/${search}`);
+  }
+
   return (
     <div className="header">
       <h2>
@@ -13,8 +25,13 @@ export default function Header() {
       </h2>
 
       <div className="navbar">
-        <form action="">
-          <input type="text" placeholder="search" />
+        <form onSubmit={handleSearch}>
+          <input 
+            type="text" 
+            placeholder="search" 
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+           />
         </form>
         <div>
           <ul>

@@ -15,6 +15,14 @@ export default function Home() {
       </div>
       <div className="content-box">
         <CardVideo />
+        <CardVideo />
+        <CardVideo />
+        <CardVideo />
+        <CardVideo />
+        <CardVideo />
+        <CardVideo />
+        <CardVideo />
+        <CardVideo />
       </div>
     </div>
   );

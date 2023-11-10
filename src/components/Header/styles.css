@@ -1,0 +1,26 @@
+.header {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+
+    gap: .5rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar form input {
+    padding: .2rem;
+    background: #f0f0f0;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}

@@ -5,8 +5,6 @@ import './styles.css'
 export default function SearchResults() {
   const params = useParams();
 
-  // const { search } = useParams();
-
   return (
     <>
       <Header />

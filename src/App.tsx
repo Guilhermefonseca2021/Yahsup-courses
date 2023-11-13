@@ -11,7 +11,7 @@ export default function App() {
       <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/player" element={<PlayerView />} />
+          <Route path="/watch" element={<PlayerView />} />
           <Route path="/search/:value" element={<SearchResults />} />
         </Routes>
       </BrowserRouter>

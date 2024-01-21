@@ -1,0 +1,6 @@
+.card-video {
+    padding: 0px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.trending h2 {
+    color: #394867;
+    border-radius: 8px;
+    padding: .5rem;
+    margin: 0 2rem;
+    font-size: 2rem;
+}
+
+.container .content-box {
+    max-width: 940px;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+}

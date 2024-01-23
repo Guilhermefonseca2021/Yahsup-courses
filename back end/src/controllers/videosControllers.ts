@@ -1,12 +1,13 @@
 import { FastifyReply, FastifyRequest } from "fastify";
-import Video from "../models/video";
+import { CreateVideo } from "../models/Video";
 
-export async function createVideo(req: FastifyRequest, res: FastifyReply) {
-    const { name, title, description } = req.body as { name: string; title: string, description: string};
+export class CreateVideoControllers {
+  async handle(requesst: FastifyRequest, reply: FastifyReply) {
+    const newVideo = new CreateVideo();
 
-    try {
+    const video = await newVideo.execute();
 
-    } catch(err: any) {
-        res.status(500).send({ message: 'occured a error ', })
-    }
+    reply.send(video)
+  }
 }
+

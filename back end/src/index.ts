@@ -1,14 +1,24 @@
 import fastify from "fastify";
 import connect from "./config/connect";
-import connectToDatabase from "./database/connect";
+import { routes } from "./routes";
+import cors from "@fastify/cors";
+import prismaClient from "./database/prisma";
 
 const app = fastify();
 
-app.get("/hello", async (request, reply) => {});
+const start = async () => {
+  await app.register(routes);
+  await app.register(cors);
 
-connectToDatabase().then(() =>
+  app.get("/hello", async (request, reply) => {});
+
+  prismaClient.$connect()
+  
   app
     .listen({ port: connect.port })
     .then(() => console.log("running server is potent"))
-    .catch((err) => console.log(err))
-);
+    .catch((err) => console.log(err));
+  
+};
+
+start();

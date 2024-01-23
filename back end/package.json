@@ -13,16 +13,16 @@
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/dotenv": "^8.2.0",
-    "@types/mongoose": "^5.11.97",
     "@types/node": "^20.11.5",
+    "prisma": "^5.8.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "cors": "^2.8.5",
+    "@fastify/cors": "^8.5.0",
+    "@prisma/client": "^5.8.1",
     "dotenv": "^16.3.2",
     "fastify": "^4.25.2",
-    "mongoose": "^8.1.0",
     "nodemon": "^3.0.3"
   }
 }
